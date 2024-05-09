@@ -3,6 +3,9 @@
   "version": "0.5.0",
   "private": true,
   "scripts": {
+    "dev-netlify": "netlify dev --live=ployxnetlify",
+    "invoke-query": "netlify functions:invoke query --port 8888",
+    "invoke-get": "netlify functions:invoke get --port 8888",
     "dev": "next dev -H 0.0.0.0 --port 3000",
     "build": "next build",
     "start": "next start",
@@ -11,8 +14,10 @@
   "dependencies": {
     "@netlify/functions": "^2.6.3",
     "@netlify/plugin-nextjs": "^5.2.2",
+    "@types/node": "^14.18.63",
     "next": "^14.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.5"
   }
 }
