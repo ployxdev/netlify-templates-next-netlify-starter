@@ -6,7 +6,7 @@ export const handler: Handler = async (event, context) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: `Hello, QUERY ${name}!`,
+      message: `Hello, QUERY ${name}! ${new Date(1577896200000).toLocaleString('th-TH', { dateStyle: 'long', timeStyle: 'medium' })}`,
     }),
   }
 }
